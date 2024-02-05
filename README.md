@@ -2,7 +2,7 @@
 
 This is a simple project to demo a login ui
 
-## Start
+## Install dependencies
 npm install
 ## run project
 npm start
