@@ -1,0 +1,8 @@
+<button [ngClass]="buttonClasses" class="w-10/12">
+  <div class="flex justify-center items-center gap-2 basis-2">
+    <ng-container *ngIf="icon" class="mr-2">
+      <img [src]="icon"  class="w-5 ">
+    </ng-container>
+    <ng-content></ng-content>
+  </div>
+</button>

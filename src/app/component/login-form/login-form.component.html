@@ -1,0 +1,35 @@
+<form>
+  <div class="">
+    <app-input-field
+      *ngFor="let field of inputFieldArray"
+      [placeholder]="field.placeholder"
+      [type]="field.type"
+    ></app-input-field>
+    <div class="centeredButton mt-48 md:mt-48 lg:mt-56">
+      <app-button type="solid">Log in</app-button>
+      <div class="flex justify-center">
+        <div class="flex py-5 items-center w-1/2">
+          <div class="flex-grow border-t border-gray-400"></div>
+          <span class="flex-shrink mx-4 text-white">Or</span>
+          <div class="flex-grow border-t border-gray-400"></div>
+        </div>
+      </div>
+      <div class="flex flex-col justify-center gap-5">
+        <app-button
+          *ngFor="let social of socialButton"
+          [type]="social.type"
+          [icon]="social.icon"
+          >{{ social.title }}</app-button
+        >
+        <div>
+          New to ASAP?
+          <span class="text-yellow-500 cursor-pointer">Sign Up</span>
+        </div>
+        <div class="my-2 lg:mt-14 text-sm">
+          By signing up, you agree to our
+          <span class="font-bold">Terms And Privacy</span> Policy
+        </div>
+      </div>
+    </div>
+  </div>
+</form>

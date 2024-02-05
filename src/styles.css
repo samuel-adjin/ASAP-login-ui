@@ -1,1 +1,278 @@
 /* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.container {
+    position: relative;
+    width: 100vw;
+  }
+  
+  .background-image {
+    background-image: url('src/assets/images/use3.jpg');
+    background-size: cover;
+    background-position: center center;
+    height: 100vh; 
+    position: relative;
+    width: 100vw;
+  }
+  
+  .overlay {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(14, 8, 6,0.8); 
+  }
+  
+  .content {
+    position: relative;
+    z-index: 1; 
+    align-items: end;
+    justify-content: end;
+    height: 100vh;
+  }
+
+  .centered {
+    position: absolute;
+    top: 10%;
+    left:50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .centeredForm {
+    position: absolute;
+    top: 120%;
+    left:58%;
+    width: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .centeredButton{
+    position: absolute;
+    top: 120%;
+    left:35%;
+    width: 83%;
+    transform: translate(-50%, -50%);
+  }
+
+  @media (min-width: 710px) and (max-width: 820px) {
+    .centeredButton {
+      left: 50%;
+      width: 120%;
+    }
+  }
+
+  @media (min-width: 689px) and (max-width: 790px) {
+    .centeredForm {
+      left: 50%; 
+    }
+  }
+  @media (min-width: 689px) and (max-width: 790px) {
+    .centeredButton {
+      left: 50%; 
+    }
+  }
+
+  @media (min-width: 600px) and (max-width: 689px) {
+    .centeredForm {
+      left: 50%;
+      width: 80%; 
+    }
+  }
+  @media (min-width: 600px) and (max-width: 689px) {
+    .centeredButton {
+      left: 50%; 
+      width: 120%;
+    }
+  }
+
+
+
+  @media (min-width: 700px) and (max-width: 750px) {
+    .centeredForm {
+      left: 50%;
+      width: 80%;
+    }
+  }
+  @media (min-width: 700px) and (max-width: 750px) {
+    .centeredButton {
+      left: 50%; 
+      width: 120%;
+    }
+  }
+
+  @media (min-width: 796px) and (max-width: 805px) {
+    .centeredForm {
+      left: 50%;
+      width: 60%;
+    }
+  }
+  @media (min-width: 796px) and (max-width: 802px) {
+    .centeredButton {
+      left: 2%; 
+      width: 120%;
+    }
+  }
+
+  @media (min-width: 813px) and (max-width: 949px) {
+    .centeredButton {
+      left: 50%;
+      width: 120%;
+    }
+  }
+
+  @media (min-width: 994px) and (max-width: 1000px) {
+    .centeredButton {
+      left: 50%;
+      width: 120%;
+    }
+  }
+
+  @media (min-width: 991px) and (max-width: 1015px) {
+    .centeredForm {
+      left: 50%; 
+      width: 60%;
+    }
+  }
+
+  @media (min-width: 990px) and (max-width: 1015px) {
+    .centeredButton {
+      left: 50%; 
+      width: 120%;
+    }
+  }
+
+  @media (min-width: 950px) and (max-width: 973px) {
+    .centeredForm {
+      left: 50%; 
+      width: 60%;
+    }
+  }
+
+  @media (min-width: 950px) and (max-width: 973px) {
+    .centeredButton {
+      left: 50%; 
+      width: 120%;
+    }
+  }
+
+  @media (min-width: 1043px) and (max-width: 1044px) {
+    .centeredForm {
+      left: 60%; 
+      width: 67%;
+    }
+  }
+
+  @media (min-width: 1023px) and (max-width: 1044px) {
+    .centeredForm {
+      left: 60%; 
+      width: 67%;
+    }
+  }
+
+  @media (min-width: 1050px) and (max-width: 1074px) {
+    .centeredForm {
+      left: 60%; 
+      width: 67%;
+    }
+  }
+
+  @media (min-width: 1010px) and (max-width: 1020px) {
+    .centeredForm {
+      left: 50%; 
+      width: 55%;
+    }
+  }
+
+  @media (min-width: 1010px) and (max-width: 1020px) {
+    .centeredButton{
+      left: 50%; 
+      width: 120%;
+    }
+  }
+
+  @media (min-width: 1154px) and (max-width: 1174px) {
+    .centeredForm {
+      left: 60%; 
+      width: 67%;
+    }
+  }
+
+  @media (min-width: 900px) and (max-width: 959px) {
+    .centeredForm {
+      left: 50%; 
+      width: 60%;
+    }
+  }
+
+  @media (min-width: 900px) and (max-width: 959px) {
+    .centeredButton {
+      left: 50%; 
+      width: 120%;
+    }
+  }
+
+  @media (min-width: 813px) and (max-width: 949px) {
+    .centeredForm {
+      left: 50%;
+    }
+  }
+
+
+  @media (min-width: 490px) and (max-width: 610px) {
+    .centeredForm {
+      left: 50%;
+      width: 80%; 
+    }
+  }
+  @media (min-width: 490px) and (max-width: 610px) {
+    .centeredButton {
+      left: 50%; 
+      width: 120%;
+    }
+  }
+
+  @media (min-width: 400px) and (max-width: 500px) {
+    .centeredForm {
+      left: 50%;
+      width: 80%;
+    }
+  }
+  @media (min-width: 400px) and (max-width: 500px) {
+    .centeredButton {
+      left: 50%; 
+      width: 120%;
+    }
+  }
+
+  @media (min-width: 300px) and (max-width: 500px) {
+    .centeredForm {
+      left: 50%;
+      width: 100%;
+    }
+  }
+  @media (min-width: 300px) and (max-width: 500px) {
+    .centeredButton {
+      left: 50%; 
+      width: 120%;
+    }
+  }
+
+
+  @media (min-width: 190px) and (max-width: 305px) {
+    .centeredForm {
+      left: 50%;
+      width: 110%;
+    }
+  }
+  @media (min-width: 190px) and (max-width: 305px) {
+    .centeredButton {
+      left: 50%; 
+      width: 120%;
+    }
+  }
