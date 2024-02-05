@@ -1,6 +1,6 @@
 # LoginUi
 
-This is a simple project to demo a login ui
+This is a simple angular project to demo a login ui
 
 ## Install dependencies
 npm install
